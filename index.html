@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Profile - Lab 3</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<div class="navbar">
+    <a href="rabanga_lab1.html">Lab 1</a>
+    <a href="rabanga_lab2.html">Lab 2</a>
+    <a href="index.html">Lab 3</a>
+</div>
+
+<div style="padding:10px;">
+    <button id="themeBtn">Toggle Dark Mode</button>
+    <button id="editJobBtn">Edit Job Title</button>
+    <button id="toggleSkillsBtn">Hide Skills</button>
+
+    <label>
+        Pick Theme Color:
+        <input type="color" id="colorPicker">
+    </label>
+</div>
+
+<div id="main-content">
+
+    <div class="left-column">
+        <div id="home">
+            <img src="anarabang.png" class="profile-img">
+            <h2>Ana Cristina A. Rabang</h2>
+            <p class="job-title">IT Student</p>
+        </div>
+
+        <div class="contact">
+            <h3>Contact</h3>
+            <p>Email: <a href="mailto:anacristintin@gmail.com">anacristintin@gmail.com</a></p>
+            <p>Phone: 09385819476</p>
+            <p>Address: Camarin, Caloocan City</p>
+        </div>
+
+        <div class="skills" id="skillsSection">
+            <h3>Skills</h3>
+            <dl>
+                <dt>• HTML & CSS (beginner)</dt>
+                <dt>• Hardware Troubleshooting</dt>
+                <dt>• Photo Editing</dt>
+                <dt>• Teamwork</dt>
+            </dl>
+        </div>
+    </div>
+
+    <div class="right-column">
+        <div id="about">
+            <h2>About Me</h2>
+            <p class="about-text">
+                A passionate IT student who loves technology, gaming, and anime.
+                Always eager to learn and improve.
+            </p>
+        </div>
+
+        <div class="experience">
+            <h2>Experiences</h2>
+            <p>• IT mini-projects</p>
+            <p>• Active in school IT events</p>
+            <p>• Group leader</p>
+            <p>• Improved time management</p>
+        </div>
+
+        <div class="form-section">
+            <h2>Message Me</h2>
+            <form class="message-form">
+                <input type="text" id="nameField" placeholder="Your Name">
+                <input type="email" id="emailField" placeholder="Your Email">
+
+                <textarea id="msgBox" maxlength="200" rows="4"
+                    placeholder="Your Message"></textarea>
+
+                <p>Characters left: <span id="counter">200</span></p>
+
+                <input type="submit" value="Send" onclick="return validateForm()">
+            </form>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    WebProg - Web Programming 2025
+    <p id="dateDisplay"></p>
+</footer>
+
+</body>
+</html>
